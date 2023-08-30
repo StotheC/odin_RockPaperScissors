@@ -14,7 +14,7 @@ const computer = document.querySelector("#comp-score");
 computer.textContent = `Computer Score: ${compScore}`;
 
 const output = document.querySelector("#output");
-output.textContent = "May the best person win!";
+output.textContent = "May the best person or computer win!";
 
 buttons.forEach((button) => {
     button.addEventListener('click', () => {
@@ -63,7 +63,7 @@ function playGame() {
     playRound();
     player.textContent = `Player Score: ${playerScore}`;
     computer.textContent = `Computer Score: ${compScore}`;
-    if (playerScore == 5) {
+/*     if (playerScore == 5) {
         output.textContent = "Woo! You won the game!";
         playerScore = 0;
         compScore = 0;
@@ -75,5 +75,5 @@ function playGame() {
         compScore = 0;
         player.textContent = `Player Score: ${playerScore}`;
         computer.textContent = `Computer Score: ${compScore}`;
-    }
+    } */
 }
